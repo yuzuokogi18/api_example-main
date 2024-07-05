@@ -105,7 +105,7 @@ export class userService {
     try {
       return await UserRepository.deleteUser(userId);
     } catch (error: any) {
-      throw new Error(`Error al eliminar empleado: ${error.message}`);
+      throw new Error(`Error al eliminar empleado: ${error.message}`);//okogi
     }
   }
 }
