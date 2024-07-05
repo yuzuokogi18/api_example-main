@@ -103,7 +103,7 @@ export class userService {
 
   public static async deleteUser(userId: number): Promise<boolean> {
     try {
-      return await UserRepository.deleteUser(userId);
+      return await UserRepository.deleteUser(userId);//yuuu
     } catch (error: any) {
       throw new Error(`Error al eliminar empleado: ${error.message}`);//okogi
     }
